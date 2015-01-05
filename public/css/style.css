@@ -1,0 +1,619 @@
+/* BASIC */
+body{
+    background-color: #e1e3e4;
+    color: #333;
+    font-family: 'Open Sans', sans-serif !important;
+}
+ul{
+    margin-left: 0;
+}
+ul li{
+    list-style: none;
+}
+h1, h2, h3, h4{
+    font-family: 'Open Sans', sans-serif !important;
+}
+h1{
+    font-size: 3em;
+    line-height: normal;
+    color: #fc4d4d;
+    margin-bottom: 50px;
+}
+h3{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+hr{
+    border: 1px solid #ccc;
+}
+p{
+    font-size: 1.1em;
+}
+.wrapper{
+    margin-top: 70px;
+	padding: 0px 15px;
+}
+#load{
+    clear: both;
+}
+
+/*
+KLEUREN
+rood #fc4d4d
+wit #f4f4f4
+licht grijs e1e3e4
+grijs #333
+donker-grijs #191919
+*/
+
+/* TEASER */
+.teaser #images{
+    margin-left: 0rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+.teaser #images li{
+    display: inline-block;
+    width: 20%;
+}
+.teaser #images li img{
+    width: 100%;
+}
+.teaser #wrapper{
+    position: absolute;
+    margin-top: 45vh;
+    width: 100%;
+    background-color: rgba(252,77,77,0.7);
+}
+.teaser h1, .teaser h3{
+	color: white;
+}
+
+/* NAV */
+.top-bar{
+    background-color: #e1e3e4;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+    line-height: normal;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.top-bar li{
+    border-right: 1px solid #ccc;
+}
+.top-bar a{
+    color: #333;
+    height: 70px;
+}
+.top-bar a:link, nav a:active, nav a:hover, nav a:visited{
+    color: #333;
+}
+.top-bar .active{
+    font-weight: bold;
+}
+.top-bar .name{
+    border: none;
+}
+.top-bar #logo{
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.top-bar-section{
+    float: right;
+}
+.top-bar-section ul li{
+    margin-left: 0px;
+    color: #333;
+}
+.top-bar-section ul li a:link, .top-bar-section ul li a:visited{
+    padding-top: 17.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1.1em;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+.top-bar-section li a:hover, .top-bar-section li a:active{
+    background-color: #ccc;
+}
+.top-bar-section #login a:link, .top-bar-section #login a:visited{
+    background-color: #fc4d4d;
+    color: white;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+.top-bar-section #login a:hover, .top-bar-section #login a:active{
+    background-color: #e14d4d;
+}
+.dropdown a:link, .dropdown a:visited{
+    color: #333;
+    background-color: #e1e3e4;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+.dropdown a:hover, .dropdown a:active{
+    background-color: #ccc;
+}
+
+/* HEADER INDEX */
+header{
+    text-align: center;
+    padding-top: 68px;
+    color: #fc4d4d;
+}
+header #intro{
+    /*temp image*/
+    background: url("/img/assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    position: relative;
+}
+header #intro:after{
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+}
+header h1{
+    z-index: 1;
+    position: relative;
+}
+header #intro a:link, header #intro a:visited{
+    background-color: #fc4d4d;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 20px 5px 20px;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+    z-index: 1;
+    position: relative;
+}
+header #intro a:hover, header #intro a:active{
+    background-color: #e14d4d;
+}
+header #recap{
+    background-color: #fc4d4d;
+    color: #f4f4f4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+header .titel a:link, header .titel a:visited, header .titel a:hover, header .titel a:active{
+    color: #333;
+}
+header #recap img{
+    width: 100px;
+}
+header #recap p{
+    font-size: 1.5rem;
+}
+.arrow-down {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fc4d4d;
+    padding: 0px;
+}
+.info{
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* INDEX */
+.subtitel{
+    text-transform: uppercase;
+    color: #fc4d4d;
+    font-weight: bold;
+}
+#index-projects{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+.avatar-small{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+}
+.avatar-small img{
+    min-height: 50px;
+}
+.avatar-small-info{
+    display: inline-block;
+    height: 50px;
+    margin-left: 5px;
+    color: #333;
+}
+.nieuw{
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fc4d4d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    float: right;
+}
+#most-recent ul li{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+#most-recent .titel{
+    margin: 0px;
+}
+
+/* STUDENTEN*/
+#search{
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.student a:link, .student a:active, .student a:hover, .student a:visited{
+    color: #333;
+}
+.student .username{
+    background-color: #fc4d4d;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.xpbartop {
+	height: 20px;
+	margin: 10px 0px;
+}
+
+.xpbar {
+	background-color: #d1d2d3;
+	position: absolute;
+	margin: 10px 0 20px 0;
+	height: 14px;
+}
+
+.xpbar>.actualxp {
+	position: absolute;
+	height: 10px;
+	background-color: #fc4d4d;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.xpbar>.xp {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	margin-top: -5px;
+}
+
+.level {
+	background-color: #fc4d4d;
+	padding: 0px 5px;
+	margin-top: 13px;
+	margin-right: 10px;
+	color: white;
+	font-size: 1.4rem;
+	float: left;
+}
+
+.lv {
+	font-size: 10px;
+}
+
+/* USER SIDE /PROJECTS */
+#projects{
+    clear: both;
+}
+.project{
+    margin-bottom: 15px;
+}
+.project a:link, .project a:active, .project a:hover, .project a:visited{
+    color: #333;
+}
+.canvas-medium{
+    height: 200px;
+    overflow: hidden;
+}
+.canvas-medium img{
+    width: 100%;
+    min-height: 200px;
+}
+.titel{
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.eigenaar{
+    font-style: italic;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.eigenaar a:link, .eigenaar a:visited{
+    color: #008cba;
+}
+.eigenaar a:active, .eigenaar a:hover{
+    color: #007095;
+}
+.project span{
+    font-weight: bold;
+    padding-top: 10px;
+}
+.icon{
+    height: 30px;
+    margin-left: 5px;
+}
+.project .voting, .project .comments{
+    float: right;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.commentactions {
+	font-variant: small-caps;
+	float: right;
+}
+.commentactions:before{
+  display: inline-block;
+  margin: 0px 10px;
+  content: "delete"; /* This will render the 'X' */
+}
+
+/* USER SIDE /PROJECT DETAIL */
+#comments-titel{
+    margin-top: 25px;
+}
+.comments{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.comments .avatar-small-info{
+    height: auto;
+}
+.comments .titel{
+    margin: 0px;
+}
+.comments img{
+    vertical-align: top;
+}
+.project-details .nieuw{
+    margin-top: 15px;
+}
+
+/* /PROFILE */
+.canvas-large{
+    max-height: 300px;
+    overflow: hidden;
+}
+.awardInfo{
+    display: none;
+    background-color: #fc4d4d;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+.awardInfo .titel{
+    margin-bottom: 0px;
+}
+.award{
+    display: inline-block;
+    cursor: pointer;
+}
+.award img{
+    width: 50px;
+    margin-top: 10px;
+}
+
+/* FORMS */
+label, input, select, option{
+    font-size: 1.1em;
+}
+textarea{
+    height: 150px;
+    resize:none;
+    font-size: 1.1em;
+}
+.fileName{
+    padding-top: 12.5px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #191919;
+    color: #555;
+    margin-top: 30px;
+}
+footer #footerFirst{
+    margin: 0px;
+    -moz-filter: grayscale();
+    -webkit-filter: grayscale();
+    -ms-filter: grayscale();
+    -o-filter: grayscale();
+    filter: grayscale();
+}
+footer #footerFirst li{
+    margin: 0;
+    width: 10%;
+}
+footer #footerFirst li img{
+    width: 100%;
+}
+footer #footerSec{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+footer #footerSec li{
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: right;
+    display: inline;
+    border-right: 1px solid;
+}
+footer #footerSec li:last-child{
+    border-right: none;
+}
+footer #footerSec li a:link, footer #footerSec li a:visited{
+    color: #555;
+    font-size: 1em;
+}
+footer #footerSec li a:hover, footer #footerSec li a:active{
+    color: #ccc;
+}
+footer #footerSec .copy{
+    text-align: right;
+}
+
+.white {
+	background-color: white;
+}
+
+.job_wrapper{
+    background-color: white;
+    padding:5px;
+    margin-bottom: 5px;
+}
+
+.row.job {
+	padding: 20px 0px;
+	margin: 20px 0px;
+	box-shadow: 0px 5px 20px #888888;
+	border-bottom: 1px solid #e1e3e4;
+}
+
+.joblist a {
+	color: #000;
+}
+
+.job_detail {
+    margin-top:30px;
+}
+
+/* Calendar CSS*/
+
+.event_list{
+    padding: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 5px 20px #888888;
+    border-bottom: 1px solid #e1e3e4;
+    height: auto;
+}
+
+.event_detail {
+    margin-top:30px;
+}
+
+.event_detail fieldset {
+   border:0 none;
+}
+
+#events_vandaag{
+    background-color:#fc4d4d;
+    color:white;
+    padding: 20px;
+    margin: 20px 0px;
+    height:auto;
+    box-shadow: 0px 5px 20px #888888;
+}
+
+#events_vandaag a{
+    color:black;
+}
+
+
+/* Documentation */
+.api_documentation{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 5px 20px #888888;
+    border-bottom: 1px solid #e1e3e4;
+}
+
+
+@media only screen and (max-width: 40em) {
+footer #footerSec ul{
+    border-right: 1px solid;
+}
+footer #footerSec li{
+    padding-right: 0px;
+    margin-right: 0px;
+    display: block;
+    border: none;
+}
+footer #footerSec .copy{
+    text-align: left;
+}
+}
+
+.alert-box>a {
+	color: white;
+	text-decoration: underline;
+}
+
+.postComment {
+	margin-top: 50px;
+}
+
+.radio>label {
+	width: 100%;
+}
+
+.radio>input {
+	display: none;
+}
+
+.radio {
+	margin: 10px 0px;
+}
+
+.notselected {
+	background-color: #e1e3e4;
+}
+
+@media screen and (min-width: 800px) {
+	.xpbar{width: 80%;}
+}
+
+@media screen  and (max-width: 799px) {
+	.xpbar{width: 90%;}
+}
