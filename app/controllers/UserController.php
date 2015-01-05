@@ -167,7 +167,12 @@
                 $user->dateofbirth = date("Y-m-d", strtotime(Input::get('dateofbirth')));
                 $user->email = Input::get('email');
                 $user->class = Input::get('class');
-				$user->type = Input::get('type');
+				if(Input::get('type'))
+				{
+					$user->admin = Input::get('type');
+				} else {
+					$user->admin = 0;
+				}
 
                 $destinationPath = '';
                 $filename        = '';
@@ -182,7 +187,8 @@
                 $user->password = Hash::make(Input::get('password'));
                 $user->save();
 
-				Auth::login($user);
+				if(!Auth::check())
+					Auth::login($user);
 
                 return Redirect::to('/register')->with('feedback', 'U bent succesvol geregistreerd');
             }

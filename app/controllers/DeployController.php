@@ -6,7 +6,7 @@
 			SSH::into('production')->run(array(
 				'cd /home/one.weareimd.be/one.weareimd.be',
 				'git stash',
-				'git pull origin master',
+				'git pull github master',
 				'php composer.phar dump-autoload',
 				'php artisan migrate --force'
 			), function($line) {
