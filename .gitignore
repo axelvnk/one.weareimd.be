@@ -1,0 +1,15 @@
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+/app/config/production/database.php
+/public/img/jobs/
+/public/img/projecten/
+/public/img/users/
+/.vagrant/
+/Vagrantfile
+/app/config/production/
