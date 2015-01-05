@@ -13,3 +13,4 @@ Thumbs.db
 /.vagrant/
 /Vagrantfile
 /app/config/production/
+/app/config/remote.php
