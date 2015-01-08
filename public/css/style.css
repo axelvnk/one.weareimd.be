@@ -343,7 +343,8 @@ header #recap p{
     clear: both;
 }
 .project{
-    margin-bottom: 15px;
+    margin: 15px 0;
+    height: 300px;
 }
 .project a:link, .project a:active, .project a:hover, .project a:visited{
     color: #333;
@@ -610,6 +611,18 @@ footer #footerSec .copy{
 	background-color: #e1e3e4;
 }
 
+@media screen  and (max-width: 960px) {
+    .project{
+        height:325px;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    .project{
+        height:350px;
+    }
+}
+
 @media screen and (min-width: 800px) {
 	.xpbar{width: 80%;}
 }
@@ -617,3 +630,4 @@ footer #footerSec .copy{
 @media screen  and (max-width: 799px) {
 	.xpbar{width: 90%;}
 }
+
