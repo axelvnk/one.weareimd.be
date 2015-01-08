@@ -1,5 +1,5 @@
 $(".file").change(function() {
-    var file = $(".file").val();
+    var file = $(".file").val().replace('C:\\fakepath\\', '');
     $(".fileName").text(file);
 });
 
