@@ -81,7 +81,9 @@ $results = json_decode($results);
 	<?php
         echo "<ul id='footerFirst' class='inline-list hide-for-small'>";
         foreach ($results->data as $result) {
-            echo "<li><img src='".$result->images->thumbnail->url."'></li>";
+        	if ($result->user->username != "imtoofabluv" && $result->user->username != "live_free_tally") {
+        		echo "<li><img src='".$result->images->thumbnail->url."'></li>";
+        	}
         }
         echo "</ul>";
     ?>
