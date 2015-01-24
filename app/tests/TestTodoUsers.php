@@ -1,13 +1,14 @@
 <?php
 
-class TestAchievement extends TestCase {
+class TestAchievement extends TestCase
+{
 
-public function todoHasUser()
-	{
-		$response = $this->call('GET', '/api/v1/todos');
+    public function todoHasUser()
+    {
+        $response = $this->call('GET', '/api/v1/todos');
 
-		$this->assertTrue($this->client->getResponse()->isOk());
+        $this->assertTrue($this->client->getResponse()->isOk());
 
-		$this->assertContains('user_id', $response->getContent());
-	}
+        $this->assertContains('user_id', $response->getContent());
+    }
 }

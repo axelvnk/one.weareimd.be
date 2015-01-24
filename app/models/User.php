@@ -3,10 +3,11 @@
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
+class User extends Eloquent implements UserInterface, RemindableInterface
+{
 
     protected $table = 'users';
-    protected $hidden = array('password','remember_token');
+    protected $hidden = array('password', 'remember_token');
 
     public function getAuthIdentifier()
     {
@@ -48,8 +49,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         return $this->hasMany('Award');
     }
 
-	public function todos()
-	{
-		return $this->hasMany('Todo');
-	}
+    public function todos()
+    {
+        return $this->hasMany('Todo');
+    }
 }

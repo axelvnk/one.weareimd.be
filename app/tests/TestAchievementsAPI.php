@@ -1,14 +1,15 @@
 <?php
 
-class TestAchievement extends TestCase {
+class TestAchievement extends TestCase
+{
 
-	public function achievementHasDescription()
-	{
-		$response = $this->call('GET', '/api/v1/achievements');
+    public function achievementHasDescription()
+    {
+        $response = $this->call('GET', '/api/v1/achievements');
 
-		$this->assertTrue($this->client->getResponse()->isOk());
+        $this->assertTrue($this->client->getResponse()->isOk());
 
-		$this->assertContains('description', $response->getContent());
-	}
+        $this->assertContains('description', $response->getContent());
+    }
 
 }

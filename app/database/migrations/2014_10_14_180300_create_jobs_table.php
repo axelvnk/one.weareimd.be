@@ -3,12 +3,12 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJobsTable extends Migration {
+class CreateJobsTable extends Migration
+{
 
-	public function up()
-	{
-		Schema::create('jobs', function($table)
-        {
+    public function up()
+    {
+        Schema::create('jobs', function ($table) {
             $table->increments('id');
             $table->string('functie');
             $table->text('beschrijving');
@@ -22,11 +22,11 @@ class CreateJobsTable extends Migration {
             $table->timestamps();
 
         });
-	}
+    }
 
-	public function down()
-	{
-		Schema::dropIfExists('jobs');
-	}
+    public function down()
+    {
+        Schema::dropIfExists('jobs');
+    }
 
 }

@@ -6,11 +6,10 @@ Admin dashboard
 @stop
 
 
-
 @section('content')
 <div class="row">
-<div class="large-12 columns">
-   <h2>Admin dashboard</h2>
+    <div class="large-12 columns">
+        <h2>Admin dashboard</h2>
         <ul>
             <li><a href="/admin/user">Userlist</a></li>
             <li><a href="/admin/project">Projectlist</a></li>

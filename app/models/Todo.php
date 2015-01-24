@@ -1,9 +1,10 @@
 <?php
 
-class Todo extends Eloquent {
+class Todo extends Eloquent
+{
 
-        public function user()
-	    {
-	        return $this->belongsTo('User');
-	    }
+    public function user()
+    {
+        return $this->belongsTo('User');
+    }
 }

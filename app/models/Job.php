@@ -1,5 +1,6 @@
 <?php
 
-class Job extends Eloquent {
+class Job extends Eloquent
+{
 
 }

@@ -3,13 +3,13 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCalendarTable extends Migration {
+class CreateCalendarTable extends Migration
+{
 
-	public function up()
-	{
-		Schema::create('calendars', function($table)
-        {
-			$table->increments('id');
+    public function up()
+    {
+        Schema::create('calendars', function ($table) {
+            $table->increments('id');
             $table->string('name');
             $table->string('description');
             $table->string('adres');
@@ -17,13 +17,13 @@ class CreateCalendarTable extends Migration {
             $table->string('postcode');
             $table->dateTime('startdate');
             $table->string('event_afbeelding');
-			$table->string('url');
+            $table->string('url');
         });
-	}
+    }
 
-	public function down()
-	{
-		Schema::dropIfExists('calendars');
-	}
+    public function down()
+    {
+        Schema::dropIfExists('calendars');
+    }
 
 }

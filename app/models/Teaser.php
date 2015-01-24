@@ -1,5 +1,6 @@
 <?php
 
-class Teaser extends Eloquent {
+class Teaser extends Eloquent
+{
     protected $table = 'teasers';
 }

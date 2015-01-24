@@ -1,8 +1,10 @@
 <?php
 
-class TodoController extends BaseController {
+class TodoController extends BaseController
+{
 
-       public function show() {
+    public function show()
+    {
         return View::make('users.todo');
     }
 

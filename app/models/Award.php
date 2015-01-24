@@ -1,10 +1,11 @@
 <?php
 
-class Award extends Eloquent {
+class Award extends Eloquent
+{
 
-        public function user()
-	    {
-	        return $this->belongsTo('User');
-	    }
+    public function user()
+    {
+        return $this->belongsTo('User');
+    }
 
 }
